@@ -1,0 +1,21 @@
+import img4 from "../assets/bootstrap.png";
+import img2 from "../assets/css.png";
+import img10 from "../assets/firebase.png";
+import img9 from "../assets/git.png";
+import img1 from "../assets/html.png";
+import img3 from "../assets/javascript.png";
+import img8 from "../assets/php.png";
+import img6 from "../assets/react.png";
+import img7 from "../assets/redux.png";
+import img5 from "../assets/tailwind.png";
+
+export const html = img1;
+export const css = img2;
+export const js = img3;
+export const bootstrap = img4;
+export const tailwind = img5;
+export const react = img6;
+export const redux = img7;
+export const php = img8;
+export const git = img9;
+export const firebase = img10;
