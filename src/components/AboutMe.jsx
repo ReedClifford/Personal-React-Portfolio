@@ -1,23 +1,31 @@
 import reed from "../assets/me.jpg";
 import useDarkContext from "../hooks/contextHook";
+
+import "aos/dist/aos.css";
 const AboutMe = () => {
   const { darkMode } = useDarkContext();
   return (
     <section className={darkMode ? "dark" : ""}>
       <div className="min-h-screen p-10" id="about">
-        <h1 className="sectionHeaders">
-          <span className="font-mono">01.</span>About Me
+        <h1 className="sectionHeaders" data-aos="fade-up">
+          <span className="font-mono span">01.</span>About Me
         </h1>
 
-        <div className="grid grid-cols-1 lg:flex justify-evenly gap-5 items-center p-5 lg:mx-20">
-          <div className="w-3/4 h-3/4 my-5 mx-auto col-span-1 lg:h-1/3 lg:w-1/3">
+        <div className="grid grid-cols-1 xl:flex justify-evenly gap-5 items-center p-5 lg:mx-20">
+          <div
+            className="w-3/4 h-3/4 my-5 mx-auto col-span-1 lg:h-2/3 lg:w-2/3 "
+            data-aos="fade-up-right"
+          >
             <img
               src={reed}
               alt="reed clifford"
-              className="object-cover object-center rounded-full "
+              className="object-cover object-center rounded-full  "
             />
           </div>
-          <div className="cols-span-1 lg:p-20">
+          <div
+            className="cols-span-1 md:mt-10 lg:p-20 "
+            data-aos="fade-up-left"
+          >
             <p className="sectionParagraphs">
               Hi!! my name is <span className="span">Reed</span> and I enjoy
               creating things that live on the internet. I am a{" "}

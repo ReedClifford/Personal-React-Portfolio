@@ -1,7 +1,10 @@
+import { motion as animate } from "framer-motion";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { Outlet } from "react-router-dom";
 import dark from "../assets/darkmode.png";
 import light from "../assets/lightmode.png";
 import useDarkContext from "../hooks/contextHook";
+
 const Navbar = () => {
   const { darkMode, setDarkMode } = useDarkContext();
   const toggle = () => {
@@ -9,7 +12,12 @@ const Navbar = () => {
   };
   return (
     <header className={darkMode ? "dark" : ""}>
-      <nav className="navbar">
+      <animate.nav
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        transition={{ delay: 0.25, duration: 0.75, ease: "easeIn" }}
+        className="navbar"
+      >
         <div>
           {darkMode ? (
             <a href="#home">
@@ -36,7 +44,8 @@ const Navbar = () => {
             <BsFillMoonStarsFill className="theme-toggler" />
           </button>
         </ul>
-      </nav>
+      </animate.nav>
+      <Outlet />
     </header>
   );
 };

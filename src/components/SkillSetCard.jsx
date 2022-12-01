@@ -1,7 +1,9 @@
 const SkillSetCard = ({ skill, img }) => {
   return (
-    <div className="border shadow-sm shadow-pink-600 p-4 rounded-xl dark:backdrop-blur-sm dark:bg-black/30 dark:shadow-none  dark:border-neutral-800">
-      <h4 className="text-center dark:text-neutral-200">{skill}</h4>
+    <div className="skillCard" data-aos="zoom-in-right">
+      <h4 className="text-center text-semibold text-lg dark:text-neutral-200">
+        {skill}
+      </h4>
       <img src={img} alt="bootstrap" className="mx-auto" />
     </div>
   );

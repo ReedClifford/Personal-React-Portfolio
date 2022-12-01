@@ -18,13 +18,13 @@ const Skills = () => {
   return (
     <section className={darkMode ? "dark" : ""} id="skills">
       <div className="min-h-screen p-10 flex justify-center items-center flex-col">
-        <h1 className="sectionHeaders">
-          <span className="font-mono">02.</span>Tools And Skills
+        <h1 className="sectionHeaders" data-aos="fade-up">
+          <span className="font-mono span">02.</span>Tools And Skills
         </h1>
 
         <div className="flex flex-col justify-center items-center gap-5 p-5 lg:mx-20">
           <div className="my-5 w-full">
-            <p className="sectionParagraphs">
+            <p className="sectionParagraphs" data-aos="fade-up">
               This are the languages and tools I have in my kit as a
               webdeveloper. I have Strong grasp and understanding of the web
               development essentials <span className="span">Html5</span>,{" "}
@@ -52,7 +52,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div className="my-5 w-full grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="skillCard-container">
             <SkillSetCard skill="html" img={html} />
             <SkillSetCard skill="css" img={css} />
             <SkillSetCard skill="javascript" img={js} />

@@ -1,17 +1,27 @@
-import AboutMe from "./components/AboutMe";
-import Home from "./components/Home";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import Archive from "./components/Archive";
+import MainDirectory from "./components/MainDirectory";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
+
 import useDarkContext from "./hooks/contextHook";
 const App = () => {
   const { darkMode } = useDarkContext();
+
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className={darkMode ? "dark" : ""}>
-      <section className="min-h-screen bg-gradient-to-t from-zinc-200 to-stone-100 dark:bg-gradient-to-tr dark:from-black dark:to-slate-900 ">
-        <Navbar />
-        <Home />
-        <AboutMe />
-        <Skills />
+      <section className="root-container ">
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<MainDirectory />} />
+          </Route>
+          <Route path="/archive" element={<Archive />} />
+        </Routes>
       </section>
     </div>
   );
