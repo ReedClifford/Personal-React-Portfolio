@@ -11,7 +11,7 @@ const App = () => {
   const { darkMode } = useDarkContext();
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ delay: 100 });
   });
   return (
     <div className={darkMode ? "dark" : ""}>

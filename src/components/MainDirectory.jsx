@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { GoChevronUp } from "react-icons/go";
 import AboutMe from "../components/AboutMe";
 import Home from "../components/Home";
 
@@ -12,6 +13,11 @@ const MainDirectory = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <a href="#home">
+        <button className="backToTop-btn">
+          <GoChevronUp />
+        </button>
+      </a>
     </Fragment>
   );
 };

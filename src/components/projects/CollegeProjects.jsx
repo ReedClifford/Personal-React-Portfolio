@@ -155,10 +155,7 @@ const CollegeProjects = () => {
       </div>
 
       <Link to="/archive">
-        <h6
-          className="underline mt-10 pb-10 text-center text-pink-700 dark:text-cyan-500 "
-          data-aos="fade-down"
-        >
+        <h6 className="underline mt-10 pb-10 text-center text-pink-700 dark:text-cyan-500 ">
           Go to Projects Archive
         </h6>
       </Link>

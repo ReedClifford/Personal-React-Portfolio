@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 .root-container {
-  @apply min-h-screen bg-gradient-to-bl from-zinc-200 to-stone-100 dark:bg-gradient-to-br dark:from-black dark:to-slate-900;
+  @apply min-h-screen bg-gradient-to-bl from-zinc-200 to-stone-100 scroll-smooth	
+   dark:bg-gradient-to-br dark:from-black dark:to-slate-900;
+}
+.backToTop-btn {
+  @apply fixed h-20 w-20 rounded-full bottom-5 right-5 flex justify-center items-center 
+  backdrop-blur-sm bg-white/40 border text-lg text-pink-700 border-pink-700 dark:backdrop-blur-sm dark:bg-black/20 
+  dark:text-cyan-500 dark:border-cyan-500;
 }
 /* FONT TEXTS */
 .mainHeader {
