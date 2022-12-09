@@ -89,7 +89,7 @@ const Home = () => {
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ delay: 0.25, duration: 0.75, ease: "easeIn" }}
-            href="https://drive.google.com/file/d/1_vMezn5GbGKTPZl0_ecpJHw8Bf0aAAjO/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KHvZHq1wB83Kq-adLLGIms2_djuAWLkC/view?usp=sharing"
           >
             <button className="cv-btn">
               <HiDocumentDuplicate />
