@@ -1,5 +1,6 @@
 import { motion as animate } from "framer-motion";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillLightbulbFill, BsFillMoonStarsFill } from "react-icons/bs";
+
 import { Outlet } from "react-router-dom";
 import dark from "../assets/darkmode.png";
 import light from "../assets/lightmode.png";
@@ -39,10 +40,15 @@ const Navbar = () => {
           <li className="navlinks">
             <a href="#projects">Projects</a>
           </li>
-
-          <button onClick={toggle}>
-            <BsFillMoonStarsFill className="theme-toggler" />
-          </button>
+          {darkMode ? (
+            <button onClick={toggle}>
+              <BsFillLightbulbFill className="theme-toggler" />
+            </button>
+          ) : (
+            <button onClick={toggle}>
+              <BsFillMoonStarsFill className="theme-toggler" />
+            </button>
+          )}
         </ul>
       </animate.nav>
       <Outlet />
