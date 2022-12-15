@@ -1,7 +1,8 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import web1 from "../assets/aesthetic.co.png";
-import web2 from "../assets/monster-rolodex.png";
+import web2 from "../assets/youtube-clone.png";
+
 import useDarkContext from "../hooks/contextHook";
 import { firebase, react, tailwind } from "../utilities/image.utility";
 import CollegeProjects from "./projects/CollegeProjects";
@@ -65,7 +66,7 @@ const Projects = () => {
             </ProjectCard>
           </div>
 
-          {/* Moster Rolodexcard*/}
+          {/* YOUUTUBE CLONE*/}
           <div data-aos="fade-down">
             <div className=" mt-16 hidden lg:block ">
               <img
@@ -77,35 +78,28 @@ const Projects = () => {
 
             <ProjectCard
               img={web2}
-              title="Moster Rolodex"
+              title="Youtube Clone"
               type="Featured Project"
             >
               <p className="sectionParagraphs">
-                My first react project that I made to practice fundamental react
-                principles, Array mapping, Reusable Components, useEffect and
-                useState. I fetch the robot data's from{" "}
-                <span className=" underline cursor-pointer text-pink-700 dark:text-cyan-500">
-                  <a href="https://jsonplaceholder.typicode.com/users">
-                    https://jsonplaceholder.typicode.com
+                Tried to make a youtube clone with its basic functionalities,
+                Youtube datas are fetched from RapidAPi
+                <br />
+                <span className=" underline cursor-pointer  text-pink-700 dark:text-cyan-500">
+                  <a href="https://rapidapi.com/ytdlfree/api/youtube-v31/">
+                    (https://rapidapi.com/ytdlfree/api/youtube-v31/)
                   </a>
-                </span>{" "}
-                and random robot images from{" "}
-                <span className=" underline cursor-pointer text-pink-700 dark:text-cyan-500">
-                  <a href="https://robohash.org/">https://robohash.org/</a>.
                 </span>
-                Includes basic data filtering feature. I had fun building this
-                project because the robot images from robohash looks similar to
-                NFT's.
               </p>
               <div className="flex gap-5 my-5 w-full ">
                 <a
-                  href="https://github.com/ReedClifford/NFT-I-GUESS-"
+                  href="https://github.com/ReedClifford/Youtube-Clone"
                   className="projectLinks"
                 >
                   <FaGithub /> Source Code
                 </a>
                 <a
-                  href="https://moster-rolodex.vercel.app"
+                  href="https://youtube-i-guess.vercel.app"
                   className="projectLinks "
                 >
                   <FaExternalLinkAlt /> Live Project

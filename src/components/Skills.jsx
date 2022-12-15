@@ -27,8 +27,8 @@ const Skills = () => {
             <p className="sectionParagraphs" data-aos="fade-up">
               This are the languages and tools I have in my kit as a
               webdeveloper. I have Strong grasp and understanding of the web
-              development essentials <span className="span">Html5</span>,{" "}
-              <span className="span">Css3</span> and{" "}
+              development essentials <span className="span">HTML5</span>,{" "}
+              <span className="span">CSS3</span> and{" "}
               <span className="span">Javascript</span>. As a webdeveloper I need
               to be on track and knows atleast the basics of the indemand most
               used technologies in the industry. That reason alone is enough for
@@ -39,13 +39,13 @@ const Skills = () => {
               <span className="span">Redux</span> which is a state management
               library of react and Im comfortable using{" "}
               <span className="span">React Context</span>. I love using{" "}
-              <span className="span">TailwindCss</span>, when working with large
+              <span className="span">TailwindCSS</span>, when working with large
               projects because the class utilities it provide is top-notch , I
               also know Bootstrap. Using{" "}
               <span className="span">Css Frameworks</span> saves me alot of time
               when stying my components. I have basic and little background on
               backend development I have worked with{" "}
-              <span className="span">Php</span> and{" "}
+              <span className="span">PHP</span> and{" "}
               <span className="span">Firebase</span> on some personal and school
               projects. Lastly every developer must know atleast basics of
               version control, such as <span className="span">Git</span>.
@@ -53,16 +53,16 @@ const Skills = () => {
           </div>
 
           <div className="skillCard-container">
-            <SkillSetCard skill="html" img={html} />
-            <SkillSetCard skill="css" img={css} />
-            <SkillSetCard skill="javascript" img={js} />
-            <SkillSetCard skill="bootstrap" img={bootstrap} />
-            <SkillSetCard skill="tailwind" img={tailwind} />
-            <SkillSetCard skill="react" img={react} />
-            <SkillSetCard skill="redux" img={redux} />
-            <SkillSetCard skill="firebase" img={firebase} />
-            <SkillSetCard skill="php" img={php} />
-            <SkillSetCard skill="git" img={git} />
+            <SkillSetCard skill="HTML5" img={html} />
+            <SkillSetCard skill="CSS3" img={css} />
+            <SkillSetCard skill="Javascript" img={js} />
+            <SkillSetCard skill="Bootstrap" img={bootstrap} />
+            <SkillSetCard skill="TailwindCSS" img={tailwind} />
+            <SkillSetCard skill="React.Js" img={react} />
+            <SkillSetCard skill="Redux" img={redux} />
+            <SkillSetCard skill="Firebase" img={firebase} />
+            <SkillSetCard skill="PHP" img={php} />
+            <SkillSetCard skill="GIT" img={git} />
           </div>
         </div>
       </div>

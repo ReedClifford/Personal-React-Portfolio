@@ -24,6 +24,28 @@ const Archive = () => {
       </h5>
       <div className="grid grid-cols-1 my-10 sm:grid-cols-2 lg:grid-cols-4 gap-5 p-10">
         <ArchiveProj
+          link="https://github.com/ReedClifford/Space-Tourism"
+          title="Space Tourism "
+          desc="Coded and created a full responsive live website for the frontendmentor.io Intermediate challenge (space-tourism-website)."
+        >
+          <div className="flex text-xs gap-5 text-neutral-700 dark:text-neutral-400">
+            <span>React</span>
+            <span>Framer Motion</span>
+            <span>TailwindCSS</span>
+          </div>
+        </ArchiveProj>
+        <ArchiveProj
+          link="https://github.com/ReedClifford/easy-bank"
+          title="Easy Bank Landing Page "
+          desc="
+          Intermediate level frontend challenge from frontendmenter.io, Landing page website"
+        >
+          <div className="flex text-xs gap-5 text-neutral-700 dark:text-neutral-400">
+            <span>React</span>
+            <span>TailwindCSS</span>
+          </div>
+        </ArchiveProj>
+        <ArchiveProj
           link="https://github.com/ReedClifford/weather-checker"
           title="weather-checker "
           desc="practicing api requests with axios"
@@ -34,6 +56,7 @@ const Archive = () => {
             <span>Javascript</span>
           </div>
         </ArchiveProj>
+
         <ArchiveProj
           link="https://github.com/ReedClifford/twitch-ripoff"
           title="twitch-ripoff"
